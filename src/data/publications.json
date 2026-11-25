@@ -231,6 +231,18 @@
       "summary": "A dynamic factor model that nowcasts Turkish GDP growth and traces each revision of the nowcast to the data release that caused it. An earlier version appeared as a Federal Reserve Board working paper."
     },
     {
+      "id": "ana-harcama-gruplar-i-in-d-viz-kuru-ge-i-kenli-i",
+      "group": "article",
+      "year": 2019,
+      "title": "Ana harcama grupları için döviz kuru geçişkenliği",
+      "venue": "Finans Politik & Ekonomik Yorumlar 56(648)",
+      "citations": 9,
+      "url": "https://ekonomikyorumlar.com.tr/files/articles/1568119468.pdf",
+      "themes": [
+        "inflation"
+      ]
+    },
+    {
       "id": "taylor-rule-for-turkey-under-multiple-structural-breaks",
       "group": "chapter",
       "year": 2019,
@@ -341,18 +353,6 @@
       "url": "https://ideas.repec.org/p/bae/rbrief/135.html",
       "themes": [
         "finance"
-      ]
-    },
-    {
-      "id": "ana-harcama-gruplar-i-in-d-viz-kuru-ge-i-kenli-i",
-      "group": "turkish",
-      "year": 2019,
-      "title": "Ana harcama grupları için döviz kuru geçişkenliği",
-      "venue": "Finans Politik & Ekonomik Yorumlar 56(648)",
-      "citations": 9,
-      "url": null,
-      "themes": [
-        "inflation"
       ]
     },
     {
