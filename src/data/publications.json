@@ -307,18 +307,6 @@
       ]
     },
     {
-      "id": "short-term-forecasting-of-us-business-cycle-regimes-using-fa",
-      "group": "working",
-      "year": 2017,
-      "title": "Short-term forecasting of US business cycle regimes using factor augmented neural network models",
-      "venue": "CEFIS working paper, Istanbul Bilgi University",
-      "citations": 0,
-      "url": null,
-      "themes": [
-        "cycles"
-      ]
-    },
-    {
       "id": "anatomy-of-the-eurozone-crisis-a-survival-approach",
       "group": "working",
       "year": 2017,
@@ -450,6 +438,7 @@
   ],
   "ignore": [
     "Three essays on forecasting",
-    "How Do Stock Prices Respond to Macro Shocks?"
+    "How Do Stock Prices Respond to Macro Shocks?",
+    "Short-term forecasting of US business cycle regimes using factor augmented neural network models"
   ]
 }
