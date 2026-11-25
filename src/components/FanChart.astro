@@ -1,0 +1,62 @@
+---
+// Illustrative nowcast fan chart, rendered to static SVG at build time.
+const W = 560, H = 320, L = 36, R = 16, T = 18, B = 34;
+let seed = 20161369;
+const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const gauss = () => { let u = 0; for (let i = 0; i < 6; i++) u += rnd(); return (u - 3) * 0.9; };
+
+const hist: number[] = [];
+let v = 1.2;
+for (let i = 0; i < 28; i++) {
+  v = 0.55 * v + 0.45 * 1.1 + gauss() * 0.55;
+  if (i === 17) v -= 2.6;
+  if (i === 18) v += 3.4;
+  hist.push(v);
+}
+const hz = 8;
+const last = hist[hist.length - 1];
+const fc = Array.from({ length: hz }, (_, k) => 1.1 + (last - 1.1) * Math.pow(0.6, k + 1));
+const n = hist.length + hz;
+const now = hist.length - 1;
+const yMin = -3, yMax = 5;
+const x = (i: number) => +(L + (i / (n - 1)) * (W - L - R)).toFixed(1);
+const y = (val: number) => +(T + (1 - (val - yMin) / (yMax - yMin)) * (H - T - B)).toFixed(1);
+
+const bands = [[1.645, 0.12], [0.842, 0.2], [0.385, 0.32]].map(([z, op]) => {
+  const up: string[] = [`${x(now)},${y(last)}`];
+  const dn: string[] = [`${x(now)},${y(last)}`];
+  fc.forEach((m, k) => {
+    const sd = 0.75 * Math.sqrt(k + 1);
+    up.push(`${x(now + k + 1)},${y(m + z * sd)}`);
+    dn.push(`${x(now + k + 1)},${y(m - z * sd)}`);
+  });
+  return { d: 'M' + up.join('L') + 'L' + dn.reverse().join('L') + 'Z', op };
+});
+const histPath = 'M' + hist.map((h, i) => `${x(i)},${y(h)}`).join('L');
+const fcPath = `M${x(now)},${y(last)}` + fc.map((m, k) => `L${x(now + k + 1)},${y(m)}`).join('');
+const grid = [-2, 0, 2, 4];
+const xLabels: [number, string, string][] = [[0, 't−27', 'start'], [now, 't', 'middle'], [n - 1, 't+8', 'end']];
+---
+<figure class="fan">
+  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby="fanTitle">
+    <title id="fanTitle">Illustrative nowcast fan chart: an observed series up to now, then a central forecast with 30, 60 and 90 percent bands that widen with the horizon.</title>
+    {grid.map((g) => (
+      <>
+        <line x1={L} x2={W - R} y1={y(g)} y2={y(g)} stroke="var(--rule)" stroke-width="1" />
+        <text x={L - 8} y={y(g) + 4} text-anchor="end" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono, monospace">{g}</text>
+      </>
+    ))}
+    <line x1={L} x2={W - R} y1={y(0)} y2={y(0)} stroke="var(--muted)" stroke-width="1" opacity="0.5" />
+    {bands.map((b) => <path d={b.d} fill="var(--accent)" fill-opacity={b.op} stroke="none" />)}
+    <line x1={x(now)} x2={x(now)} y1={T - 4} y2={H - B} stroke="var(--muted)" stroke-dasharray="3 4" stroke-width="1" />
+    <text x={x(now) + 6} y={T + 6} font-size="11" fill="var(--muted)" font-family="IBM Plex Mono, monospace">nowcast</text>
+    <path d={histPath} fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-linejoin="round" />
+    <path d={fcPath} fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-dasharray="5 4" />
+    <circle cx={x(now)} cy={y(last)} r="4" fill="var(--accent)" stroke="var(--paper)" stroke-width="2" />
+    {xLabels.map(([i, lab, anchor]) => (
+      <text x={x(i)} y={H - B + 18} text-anchor={anchor} font-size="11" fill="var(--muted)" font-family="IBM Plex Mono, monospace">{lab}</text>
+    ))}
+    <text x={L} y={H - 2} font-size="11" fill="var(--muted)" font-family="IBM Plex Sans, sans-serif">GDP growth, % q/q (quarters)</text>
+  </svg>
+  <figcaption><b>Fig. 1.</b> What a nowcast looks like: the observed series, today's estimate, and 30/60/90% bands that widen with the horizon. Illustrative data.</figcaption>
+</figure>

@@ -1,0 +1,14 @@
+{
+  "updated": "2026-11-25",
+  "repos": [
+    { "name": "ai-demand-occupational-adjustment", "url": "https://github.com/BSoybilgen/ai-demand-occupational-adjustment", "language": "Python", "stars": 0,
+      "summary": "Code, data and saved model runs for the working paper When AI Automates Knowledge Work: Aggregate Demand and Occupational Adjustment. Rebuilds every table and figure in about two minutes.",
+      "snippet": "bash run_all.sh", "tags": ["Working paper"] },
+    { "name": "simple-trade", "url": "https://github.com/BSoybilgen/simple-trade", "language": "Python", "stars": 2,
+      "summary": "A Python package for downloading market data, computing 100+ technical indicators, and backtesting and optimising trading strategies, with 100+ premade strategies.",
+      "snippet": "pip install simple-trade", "tags": ["PyPI", "AGPL-3.0"] },
+    { "name": "CEFIS-Food-Indices", "url": "https://github.com/BSoybilgen/CEFIS-Food-Indices", "language": "Python", "stars": 1,
+      "summary": "Daily food price indices for Turkey, built from five online retail chains across 131 TurkStat subcategories. The method is in the Journal of Business Cycle Research paper.",
+      "snippet": "base: Jan 2020 = 100", "tags": ["Data"] }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "themes": {
+    "nowcasting": "Nowcasting",
+    "cycles": "Business cycles",
+    "inflation": "Inflation & monetary policy",
+    "labour": "Labour markets",
+    "finance": "Finance & crises",
+    "ai": "AI & the economy",
+    "methods": "Methods"
+  },
+  "groups": {
+    "article": "Peer-reviewed journal articles",
+    "chapter": "Book chapters",
+    "working": "Working papers & preprints",
+    "turkish": "Policy briefs and articles in Turkish"
+  },
+  "publications": [
+    {
+      "id": "distributional-effects-of-female-employment-ratio-on-turkish",
+      "group": "article",
+      "year": 2026,
+      "title": "Distributional effects of female employment ratio on Turkish labor market outcomes",
+      "venue": "Journal of Economic Studies",
+      "citations": 0,
+      "url": "https://doi.org/10.1108/jes-08-2025-0602",
+      "themes": [
+        "labour"
+      ]
+    },
+    {
+      "id": "big-data-financial-transactions-and-gdp-nowcasting-the-case-",
+      "group": "article",
+      "year": 2024,
+      "title": "Big data financial transactions and GDP nowcasting: The case of Turkey",
+      "venue": "Journal of Forecasting 43(2)",
+      "citations": 15,
+      "url": "https://doi.org/10.1002/for.3032",
+      "themes": [
+        "nowcasting"
+      ],
+      "featured": 3,
+      "summary": "Uses financial transaction data from the banking system to nowcast Turkish GDP."
+    },
+    {
+      "id": "nowcasting-turkish-food-inflation-using-daily-online-prices",
+      "group": "article",
+      "year": 2023,
+      "title": "Nowcasting Turkish food inflation using daily online prices",
+      "venue": "Journal of Business Cycle Research 19(2)",
+      "citations": 12,
+      "url": "https://doi.org/10.1007/s41549-023-00084-2",
+      "themes": [
+        "nowcasting",
+        "inflation"
+      ],
+      "featured": 4,
+      "summary": "Nowcasts Turkish food inflation from prices scraped daily from online retailers. The CEFIS Food Indices are built on this method."
+    },
+    {
+      "id": "inflation-aversion-in-turkey",
+      "group": "article",
+      "year": 2023,
+      "title": "Inflation aversion in Turkey",
+      "venue": "Economic Systems 47(4)",
+      "citations": 2,
+      "url": "https://doi.org/10.1016/j.ecosys.2023.101147",
+      "themes": [
+        "inflation"
+      ]
+    },
+    {
+      "id": "nowcasting-us-gdp-using-tree-based-ensemble-models-and-dynam",
+      "group": "article",
+      "year": 2021,
+      "title": "Nowcasting US GDP using tree-based ensemble models and dynamic factors",
+      "venue": "Computational Economics 57(1)",
+      "citations": 79,
+      "url": "https://doi.org/10.1007/s10614-020-10083-5",
+      "themes": [
+        "nowcasting"
+      ],
+      "featured": 2,
+      "summary": "Combines dynamic factors with tree-based ensemble models to nowcast US GDP growth."
+    },
+    {
+      "id": "identifying-us-business-cycle-regimes-using-dynamic-factors-",
+      "group": "article",
+      "year": 2020,
+      "title": "Identifying US business cycle regimes using dynamic factors and neural network models",
+      "venue": "Journal of Forecasting 39(5)",
+      "citations": 12,
+      "url": "https://doi.org/10.1002/for.2658",
+      "themes": [
+        "cycles"
+      ]
+    },
+    {
+      "id": "a-general-model-for-financial-crises-an-application-to-euroz",
+      "group": "article",
+      "year": 2020,
+      "title": "A general model for financial crises: An application to Eurozone crisis",
+      "venue": "International Review of Economics & Finance 70",
+      "citations": 2,
+      "url": "https://doi.org/10.2139/ssrn.3679392",
+      "themes": [
+        "finance"
+      ]
+    },
+    {
+      "id": "determinants-of-turkish-female-labour-force-participation-an",
+      "group": "article",
+      "year": 2020,
+      "title": "Determinants of Turkish female labour force participation: An analysis with manufacturing firm-level data",
+      "venue": "Applied Economics Letters 27(19)",
+      "citations": 9,
+      "url": "https://doi.org/10.1080/13504851.2019.1707757",
+      "themes": [
+        "labour"
+      ]
+    },
+    {
+      "id": "identifying-turkish-business-cycle-regimes-in-real-time",
+      "group": "article",
+      "year": 2020,
+      "title": "Identifying Turkish business cycle regimes in real time",
+      "venue": "Applied Economics Letters 27(1)",
+      "citations": 1,
+      "url": "https://doi.org/10.1080/13504851.2019.1607243",
+      "themes": [
+        "cycles"
+      ]
+    },
+    {
+      "id": "evaluating-the-effect-of-geopolitical-risks-on-the-growth-ra",
+      "group": "article",
+      "year": 2019,
+      "title": "Evaluating the effect of geopolitical risks on the growth rates of emerging countries",
+      "venue": "Economics Bulletin 39(1)",
+      "citations": 79,
+      "url": null,
+      "themes": [
+        "finance"
+      ]
+    },
+    {
+      "id": "evaluating-the-asymmetric-effects-of-production-interest-rat",
+      "group": "article",
+      "year": 2019,
+      "title": "Evaluating the asymmetric effects of production, interest rate and exchange rate on the Turkish stock prices",
+      "venue": "Ege Academic Review 19(2)",
+      "citations": 11,
+      "url": "https://doi.org/10.21121/eab.556344",
+      "themes": [
+        "finance"
+      ]
+    },
+    {
+      "id": "time-varying-taylor-rule-estimation-for-turkey-with-flexible",
+      "group": "article",
+      "year": 2019,
+      "title": "Time-varying Taylor rule estimation for Turkey with flexible least square method",
+      "venue": "Boğaziçi Journal: Review of Social, Economic and Administrative Studies",
+      "citations": 16,
+      "url": null,
+      "themes": [
+        "inflation",
+        "methods"
+      ]
+    },
+    {
+      "id": "on-the-performance-of-wavelet-based-unit-root-tests",
+      "group": "article",
+      "year": 2018,
+      "title": "On the performance of wavelet based unit root tests",
+      "venue": "Journal of Risk and Financial Management 11(3)",
+      "citations": 30,
+      "url": "https://doi.org/10.3390/jrfm11030047",
+      "themes": [
+        "methods"
+      ]
+    },
+    {
+      "id": "evaluating-nowcasts-of-bridge-equations-with-advanced-combin",
+      "group": "article",
+      "year": 2018,
+      "title": "Evaluating nowcasts of bridge equations with advanced combination schemes for the Turkish unemployment rate",
+      "venue": "Economic Modelling 72",
+      "citations": 16,
+      "url": "https://doi.org/10.1016/j.econmod.2018.01.009",
+      "themes": [
+        "nowcasting",
+        "labour"
+      ]
+    },
+    {
+      "id": "nowcasting-the-new-turkish-gdp",
+      "group": "article",
+      "year": 2018,
+      "title": "Nowcasting the new Turkish GDP",
+      "venue": "Economics Bulletin 38(2)",
+      "citations": 11,
+      "url": null,
+      "themes": [
+        "nowcasting"
+      ]
+    },
+    {
+      "id": "an-evaluation-of-inflation-expectations-in-turkey",
+      "group": "article",
+      "year": 2017,
+      "title": "An evaluation of inflation expectations in Turkey",
+      "venue": "Central Bank Review 17(1)",
+      "citations": 44,
+      "url": "https://doi.org/10.1016/j.cbrev.2017.01.001",
+      "themes": [
+        "inflation"
+      ]
+    },
+    {
+      "id": "nowcasting-turkish-gdp-and-news-decomposition",
+      "group": "article",
+      "year": 2016,
+      "title": "Nowcasting Turkish GDP and news decomposition",
+      "venue": "International Journal of Forecasting 32(4)",
+      "citations": 75,
+      "url": "https://doi.org/10.1016/j.ijforecast.2016.07.001",
+      "themes": [
+        "nowcasting"
+      ],
+      "featured": 1,
+      "summary": "A dynamic factor model that nowcasts Turkish GDP growth and traces each revision of the nowcast to the data release that caused it. An earlier version appeared as a Federal Reserve Board working paper."
+    },
+    {
+      "id": "taylor-rule-for-turkey-under-multiple-structural-breaks",
+      "group": "chapter",
+      "year": 2019,
+      "title": "Taylor rule for Turkey under multiple structural breaks",
+      "venue": "Current Issues in Turkish Economy",
+      "citations": 2,
+      "url": null,
+      "themes": [
+        "inflation",
+        "methods"
+      ]
+    },
+    {
+      "id": "predicting-us-recessions-using-long-run-fluctuations-of-the-",
+      "group": "chapter",
+      "year": null,
+      "title": "Predicting US recessions using long-run fluctuations of the yield spread: A wavelet approach",
+      "venue": "Academic Studies in Social, Human and Administrative Sciences",
+      "citations": 0,
+      "url": null,
+      "themes": [
+        "cycles",
+        "methods"
+      ]
+    },
+    {
+      "id": "when-ai-automates-knowledge-work-aggregate-demand-and-occupa",
+      "group": "working",
+      "year": 2026,
+      "title": "When AI automates knowledge work: Aggregate demand and occupational adjustment",
+      "venue": "Working paper · code and data on GitHub",
+      "citations": 0,
+      "url": "https://github.com/BSoybilgen/ai-demand-occupational-adjustment",
+      "themes": [
+        "ai",
+        "labour"
+      ]
+    },
+    {
+      "id": "nowcasting-inflation-using-online-prices",
+      "group": "working",
+      "year": 2026,
+      "title": "Nowcasting inflation using online prices",
+      "venue": "Preprint, Research Square",
+      "citations": 0,
+      "url": "https://doi.org/10.21203/rs.3.rs-9076709/v1",
+      "themes": [
+        "nowcasting",
+        "inflation"
+      ]
+    },
+    {
+      "id": "big-data-information-and-nowcasting-consumption-and-investme",
+      "group": "working",
+      "year": 2021,
+      "title": "Big data information and nowcasting: Consumption and investment from bank transactions in Turkey",
+      "venue": "arXiv 2107.03299 · BBVA Research",
+      "citations": 8,
+      "url": "https://arxiv.org/abs/2107.03299",
+      "themes": [
+        "nowcasting"
+      ]
+    },
+    {
+      "id": "short-term-forecasting-of-us-business-cycle-regimes-using-fa",
+      "group": "working",
+      "year": 2017,
+      "title": "Short-term forecasting of US business cycle regimes using factor augmented neural network models",
+      "venue": "CEFIS working paper, Istanbul Bilgi University",
+      "citations": 0,
+      "url": null,
+      "themes": [
+        "cycles"
+      ]
+    },
+    {
+      "id": "anatomy-of-the-eurozone-crisis-a-survival-approach",
+      "group": "working",
+      "year": 2017,
+      "title": "Anatomy of the Eurozone crisis: A survival approach",
+      "venue": "Working paper",
+      "citations": 0,
+      "url": null,
+      "themes": [
+        "finance"
+      ]
+    },
+    {
+      "id": "nowcasting-turkish-gdp-and-news-decomposition-working",
+      "group": "working",
+      "year": 2016,
+      "title": "Nowcasting Turkish GDP and news decomposition",
+      "venue": "Finance and Economics Discussion Series 2016-044, Federal Reserve Board",
+      "citations": 5,
+      "url": "https://doi.org/10.17016/feds.2016.044",
+      "themes": [
+        "nowcasting"
+      ],
+      "scholar": false
+    },
+    {
+      "id": "credit-crunch-or-not-case-of-turkey-during-the-global-econom",
+      "group": "working",
+      "year": 2012,
+      "title": "Credit crunch or not? Case of Turkey during the global economic crisis",
+      "venue": "Betam working paper",
+      "citations": 0,
+      "url": null,
+      "themes": [
+        "finance"
+      ]
+    },
+    {
+      "id": "the-role-of-economic-size-and-distance-in-turkey-s-exports",
+      "group": "working",
+      "year": 2012,
+      "title": "The role of economic size and distance in Turkey’s exports",
+      "venue": "Betam working paper",
+      "citations": 0,
+      "url": null,
+      "themes": [
+        "finance"
+      ]
+    },
+    {
+      "id": "ana-harcama-gruplar-i-in-d-viz-kuru-ge-i-kenli-i",
+      "group": "turkish",
+      "year": 2019,
+      "title": "Ana harcama grupları için döviz kuru geçişkenliği",
+      "venue": "Finans Politik & Ekonomik Yorumlar 56(648)",
+      "citations": 9,
+      "url": null,
+      "themes": [
+        "inflation"
+      ]
+    },
+    {
+      "id": "imditahmin-com-un-t-rkiye-gsyh-b-y-me-oranlar-i-in-tahmin-pe",
+      "group": "turkish",
+      "year": 2016,
+      "title": "Şimditahmin.com’un Türkiye GSYH büyüme oranları için tahmin performansı",
+      "venue": "İktisat ve Toplum",
+      "citations": 2,
+      "url": null,
+      "themes": [
+        "nowcasting"
+      ]
+    },
+    {
+      "id": "t-rkiye-orta-gelir-tuza-n-n-e-i-inde-turkey-is-on-the-brink-",
+      "group": "turkish",
+      "year": 2013,
+      "title": "Türkiye orta gelir tuzağının eşiğinde (Turkey is on the brink of the middle income trap)",
+      "venue": "Betam research brief",
+      "citations": 41,
+      "url": null,
+      "themes": [
+        "cycles"
+      ],
+      "scholarMatch": [
+        "Türkiye Orta Gelir Tuzağının Eşiğinde",
+        "Turkey Is On The Brink Of Middle Income Trap"
+      ]
+    },
+    {
+      "id": "t-rkiye-de-inovasyon-nicelik-var-nitelik-yok",
+      "group": "turkish",
+      "year": 2013,
+      "title": "Türkiye’de inovasyon: Nicelik var nitelik yok",
+      "venue": "Betam research brief",
+      "citations": 7,
+      "url": null,
+      "themes": []
+    }
+  ],
+  "unsorted": [
+    {
+      "title": "Türkiye uzun yıllar orta gelir tuzağından kurtulamayabilir",
+      "authors": "S Gürsel, B Soybilgen",
+      "venue": "",
+      "citations": 4,
+      "year": 2014
+    },
+    {
+      "title": "Enflasyon ve Göreli Fiyatlar",
+      "authors": "B Soybilgen, E Yazgan",
+      "venue": "CİLT/VOLUME: 2 SAYI/ISSUE: 8, 72, 2019",
+      "citations": 1,
+      "year": 2019
+    },
+    {
+      "title": "2012'de İhracatı altın Sırtladı",
+      "authors": "B Soybilgen",
+      "venue": "",
+      "citations": 1,
+      "year": 2013
+    },
+    {
+      "title": "Arap Baharı ve Avrupa Borç Krizi İhracatı Teğet Geçti",
+      "authors": "B Soybilgen",
+      "venue": "",
+      "citations": 1,
+      "year": 2012
+    }
+  ],
+  "ignore": [
+    "Three essays on forecasting",
+    "How Do Stock Prices Respond to Macro Shocks?"
+  ]
+}

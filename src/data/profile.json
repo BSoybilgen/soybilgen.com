@@ -1,0 +1,37 @@
+{
+  "name": "Baris Soybilgen",
+  "eyebrow": "Economist · Data scientist · Stockholm",
+  "lede": "I research forecasting: nowcasting GDP, inflation and unemployment from high-frequency data, and reading business cycles with machine learning. I also build the machine-learning and LLM systems that put models like these into production.",
+  "description": "Economist and data scientist in Stockholm. Research on nowcasting, business cycles and forecasting; open-source code; posts on Turkish markets.",
+  "email": "soybilgen@gmail.com",
+  "links": [
+    { "label": "Google Scholar", "href": "https://scholar.google.com/citations?user=hMNjIm8AAAAJ&hl=en" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/baris-soybilgen/" },
+    { "label": "GitHub", "href": "https://github.com/BSoybilgen" },
+    { "label": "X", "href": "https://x.com/Soybilgen" }
+  ],
+  "about": {
+    "heading": "An economist who ships the code behind the model.",
+    "paragraphs": [
+      "I'm a Senior Data Scientist at Sambla Group in Stockholm. I lead customer-facing generative AI applications used by mobile app customers in three markets, and I build LLM tools on company data, customer-level revenue models and marketing mix models.",
+      "I started my career in Turkey, forecasting the economy at Betam. Next came Istanbul Bilgi University, where as an assistant professor I taught and built deep-learning and statistical models for macro-finance forecasting and high-frequency indicators of the Turkish economy. I then moved to Sweden, where I analysed survey data at the Governance and Local Development Institute in Gothenburg before joining Sambla Group."
+    ],
+    "education": [
+      { "what": "PhD, Economics", "where": "Istanbul Bilgi University", "note": "Three Essays on Forecasting" },
+      { "what": "MA, International Economics", "where": "University of Konstanz", "note": "How Do Stock Prices Respond to Macro Shocks?" },
+      { "what": "BSc, Systems Engineering", "where": "Yeditepe University, with an exchange term at Montana State University" }
+    ],
+    "skills": [
+      { "what": "Python, R, SQL, MATLAB", "where": "Forecasting, econometrics, time series, machine learning" },
+      { "what": "Google Cloud and AWS", "where": "Vertex AI, BigQuery, Cloud Run · Bedrock, AgentCore, Lambda · Terraform" },
+      { "what": "Languages", "where": "Turkish (native), English (fluent)" }
+    ]
+  },
+  "research": { "heading": "Forecasting the economy before the official numbers arrive." },
+  "code": { "heading": "Open source, with the data and models to reproduce it." },
+  "x": {
+    "heading": "Checking market claims against the data.",
+    "intro": "On X I test claims about Turkish markets, the lira and gold against historical data, usually with a chart. Posts are in Turkish.",
+    "handle": "Soybilgen"
+  }
+}

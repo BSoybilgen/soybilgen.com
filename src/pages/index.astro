@@ -1,0 +1,190 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FanChart from '../components/FanChart.astro';
+import PublicationList from '../components/PublicationList.tsx';
+import profile from '../data/profile.json';
+import metrics from '../data/metrics.json';
+import pubData from '../data/publications.json';
+import repoData from '../data/repos.json';
+import xData from '../data/x_posts.json';
+import pinData from '../data/pinned.json';
+
+const MAX_POSTS = 6;
+
+const publications = pubData.publications;
+const featured = publications
+  .filter((p) => p.featured)
+  .sort((a, b) => (a.featured ?? 0) - (b.featured ?? 0));
+const shortVenue = (v: string) => v.replace(/ \d.*$/, '');
+
+const hidden = new Set<string>(pinData.hidden);
+const pinned = new Set<string>(pinData.pinned);
+const visible = xData.posts.filter((p) => !hidden.has(p.id));
+const posts = [
+  ...pinData.pinned.map((id) => visible.find((p) => p.id === id)).filter((p) => p !== undefined),
+  ...visible.filter((p) => !pinned.has(p.id)),
+].slice(0, MAX_POSTS);
+
+const fmtDate = (iso: string) =>
+  new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Europe/Stockholm' }).format(new Date(iso));
+
+const lastRefresh = [metrics.updated, repoData.updated, xData.updated].sort().at(-1) ?? metrics.updated;
+const metricItems = [
+  { n: metrics.citations, l: `citations on ${metrics.source}` },
+  { n: metrics.hIndex, l: 'h-index' },
+  { n: metrics.i10Index, l: 'i10-index' },
+  { n: metrics.articles, l: 'peer-reviewed articles' },
+  { n: metrics.chapters, l: 'book chapters' },
+];
+---
+<Layout>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="wordmark" href="#top">{profile.name}</a>
+      <div class="topbar-right">
+        <nav class="nav" aria-label="Sections">
+          <a href="#about">About</a><a href="#research">Research</a><a href="#code">Code</a><a href="#x">On X</a>
+        </nav>
+        <button type="button" class="theme-toggle" id="theme-toggle">Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div>
+          <p class="eyebrow">{profile.eyebrow}</p>
+          <h1>{profile.name}</h1>
+          <p class="lede">{profile.lede}</p>
+          <ul class="links">
+            {profile.links.map((l) => <li><a href={l.href} rel="me">{l.label}</a></li>)}
+            <li class="email">{profile.email}</li>
+          </ul>
+        </div>
+        <FanChart />
+      </div>
+    </section>
+
+    <div class="metrics" aria-label="Research metrics">
+      <div class="wrap">
+        {metricItems.map((m) => (
+          <div class="metric"><div class="n">{m.n}</div><div class="l">{m.l}</div></div>
+        ))}
+      </div>
+    </div>
+
+    <section class="block" id="about">
+      <div class="wrap">
+        <div class="rail"><span>About</span></div>
+        <div class="main">
+          <h2>{profile.about.heading}</h2>
+          <div class="prose">
+            {profile.about.paragraphs.map((p) => <p>{p}</p>)}
+          </div>
+          <div class="facts">
+            <div>
+              <h3>Education</h3>
+              <ul>
+                {profile.about.education.map((e) => (
+                  <li>
+                    <div class="what">{e.what}</div>
+                    <div class="where">{e.where}</div>
+                    {e.note && <div class="note">{e.note}</div>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3>Works with</h3>
+              <ul>
+                {profile.about.skills.map((s) => (
+                  <li><div class="what">{s.what}</div><div class="where">{s.where}</div></li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="research">
+      <div class="wrap">
+        <div class="rail"><span>Research</span></div>
+        <div class="main">
+          <h2>{profile.research.heading}</h2>
+          <div class="featured">
+            {featured.map((p) => (
+              <article class="paper">
+                <div class="venue">{shortVenue(p.venue)}</div>
+                <h3>{p.url ? <a href={p.url}>{p.title}</a> : p.title}</h3>
+                <p>{p.summary}</p>
+                <div class="foot"><span>{p.year}</span><span>{p.citations} citations</span></div>
+              </article>
+            ))}
+          </div>
+          <div class="listhead"><h3>All publications</h3></div>
+          <PublicationList client:visible publications={publications} themes={pubData.themes} groups={pubData.groups} />
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="code">
+      <div class="wrap">
+        <div class="rail"><span>Code</span></div>
+        <div class="main">
+          <h2>{profile.code.heading}</h2>
+          <div class="repos">
+            {repoData.repos.map((r) => (
+              <article class="repo">
+                <h3><a href={r.url}>{r.name}</a></h3>
+                <p>{r.summary}</p>
+                {r.snippet && <code>{r.snippet}</code>}
+                <div class="meta">
+                  {r.language && <span><span class="dot"></span>{r.language}</span>}
+                  {r.stars > 0 && <span>★ {r.stars}</span>}
+                  {r.tags.map((t) => <span>{t}</span>)}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="x">
+      <div class="wrap">
+        <div class="rail"><span>On X</span></div>
+        <div class="main">
+          <h2>{profile.x.heading}</h2>
+          <div class="xintro">
+            <p>{profile.x.intro}</p>
+            <a href={`https://x.com/${profile.x.handle}`}>Follow @{profile.x.handle} →</a>
+          </div>
+          <div class="posts">
+            {posts.map((p) => (
+              <article class="post">
+                {p.images[0] && <img src={p.images[0].src} alt={p.images[0].alt} width="720" height="403" loading="lazy" decoding="async" />}
+                <div class="body">
+                  <div class="head">
+                    <span><b>{profile.name}</b> @{profile.x.handle} · <time datetime={p.createdAt}>{fmtDate(p.createdAt)}</time></span>
+                    {pinned.has(p.id) && <span class="pin">Pinned</span>}
+                  </div>
+                  <p class="txt" lang={p.lang}>{p.text}</p>
+                  <a class="more" href={p.url}>Read on X →</a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>{profile.name} · Stockholm</span>
+      <span class="stamp">Publications, repositories and posts refresh daily · last refresh {fmtDate(lastRefresh + 'T12:00:00Z')}</span>
+    </div>
+  </footer>
+</Layout>

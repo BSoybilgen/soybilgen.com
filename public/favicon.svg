@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>.bg{fill:#f6f7f9}.ln{stroke:#161b26}@media (prefers-color-scheme:dark){.bg{fill:#10141c}.ln{stroke:#e7eaf0}}</style>
+  <rect class="bg" width="32" height="32" rx="6"/>
+  <path d="M14 17 L28 6 L28 28 Z" fill="#a3212b" fill-opacity="0.22"/>
+  <path d="M14 17 L28 11 L28 23 Z" fill="#a3212b" fill-opacity="0.45"/>
+  <path class="ln" d="M3 20 L6 15 L9 18 L14 17" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="14" cy="17" r="2.4" fill="#a3212b"/>
+</svg>

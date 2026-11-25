@@ -1,0 +1,103 @@
+---
+import '../styles/global.css';
+import profile from '../data/profile.json';
+import pubData from '../data/publications.json';
+
+const site = Astro.site?.toString() ?? 'https://soybilgen.com/';
+const title = profile.name;
+const description = profile.description;
+const ogImage = new URL('/og.png', site).toString();
+
+const sameAs = profile.links.map((l) => l.href);
+const articles = pubData.publications
+  .filter((p) => p.group === 'article' && p.url)
+  .map((p) => ({
+    '@type': 'ScholarlyArticle',
+    headline: p.title,
+    datePublished: p.year ? String(p.year) : undefined,
+    isPartOf: p.venue,
+    url: p.url,
+  }));
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: profile.name,
+  url: site,
+  jobTitle: 'Senior Data Scientist',
+  worksFor: { '@type': 'Organization', name: 'Sambla Group' },
+  address: { '@type': 'PostalAddress', addressLocality: 'Stockholm', addressCountry: 'SE' },
+  alumniOf: [
+    { '@type': 'CollegeOrUniversity', name: 'Istanbul Bilgi University' },
+    { '@type': 'CollegeOrUniversity', name: 'University of Konstanz' },
+    { '@type': 'CollegeOrUniversity', name: 'Yeditepe University' },
+  ],
+  knowsAbout: ['Nowcasting', 'Forecasting', 'Econometrics', 'Machine learning', 'Large language models', 'Turkish economy'],
+  sameAs,
+  subjectOf: articles,
+};
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={site} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#10141c" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={site} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Soybilgen" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+
+    <script is:inline>
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <slot />
+    <script is:inline>
+      (function () {
+        var btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        var root = document.documentElement;
+        var mq = window.matchMedia('(prefers-color-scheme: dark)');
+        function current() {
+          var t = root.getAttribute('data-theme');
+          return t ? t : mq.matches ? 'dark' : 'light';
+        }
+        function label() {
+          var next = current() === 'dark' ? 'light' : 'dark';
+          btn.textContent = next === 'dark' ? 'Dark' : 'Light';
+          btn.setAttribute('aria-label', 'Switch to ' + next + ' theme');
+        }
+        btn.addEventListener('click', function () {
+          var next = current() === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) {}
+          label();
+        });
+        mq.addEventListener('change', label);
+        label();
+      })();
+    </script>
+  </body>
+</html>
