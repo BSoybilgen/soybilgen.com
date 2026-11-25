@@ -307,18 +307,6 @@
       ]
     },
     {
-      "id": "anatomy-of-the-eurozone-crisis-a-survival-approach",
-      "group": "working",
-      "year": 2017,
-      "title": "Anatomy of the Eurozone crisis: A survival approach",
-      "venue": "Working paper, SSRN",
-      "citations": 0,
-      "url": "https://doi.org/10.2139/ssrn.3079699",
-      "themes": [
-        "finance"
-      ]
-    },
-    {
       "id": "nowcasting-turkish-gdp-and-news-decomposition-working",
       "group": "working",
       "year": 2016,
@@ -439,6 +427,7 @@
   "ignore": [
     "Three essays on forecasting",
     "How Do Stock Prices Respond to Macro Shocks?",
-    "Short-term forecasting of US business cycle regimes using factor augmented neural network models"
+    "Short-term forecasting of US business cycle regimes using factor augmented neural network models",
+    "Anatomy of the Eurozone crisis: A survival approach"
   ]
 }
