@@ -101,7 +101,7 @@
       "title": "A general model for financial crises: An application to Eurozone crisis",
       "venue": "International Review of Economics & Finance 70",
       "citations": 2,
-      "url": "https://doi.org/10.2139/ssrn.3679392",
+      "url": "https://doi.org/10.1016/j.iref.2020.05.017",
       "themes": [
         "finance"
       ]
@@ -137,7 +137,7 @@
       "title": "Evaluating the effect of geopolitical risks on the growth rates of emerging countries",
       "venue": "Economics Bulletin 39(1)",
       "citations": 79,
-      "url": null,
+      "url": "https://ideas.repec.org/a/ebl/ecbull/eb-18-00785.html",
       "themes": [
         "finance"
       ]
@@ -161,7 +161,7 @@
       "title": "Time-varying Taylor rule estimation for Turkey with flexible least square method",
       "venue": "Boğaziçi Journal: Review of Social, Economic and Administrative Studies",
       "citations": 16,
-      "url": null,
+      "url": "https://openaccess.bilgi.edu.tr/items/b98a36d1-7e02-442f-8f88-a3f21f3a663a",
       "themes": [
         "inflation",
         "methods"
@@ -199,7 +199,7 @@
       "title": "Nowcasting the new Turkish GDP",
       "venue": "Economics Bulletin 38(2)",
       "citations": 11,
-      "url": null,
+      "url": "https://ideas.repec.org/a/ebl/ecbull/eb-17-00443.html",
       "themes": [
         "nowcasting"
       ]
@@ -235,9 +235,9 @@
       "group": "chapter",
       "year": 2019,
       "title": "Taylor rule for Turkey under multiple structural breaks",
-      "venue": "Current Issues in Turkish Economy",
+      "venue": "Current Issues in Turkish Economics (Peter Lang)",
       "citations": 2,
-      "url": null,
+      "url": "https://openaccess.bilgi.edu.tr/items/85c636f2-adb7-4f42-96b7-74a0ff4d8995",
       "themes": [
         "inflation",
         "methods"
@@ -261,9 +261,9 @@
       "group": "working",
       "year": 2026,
       "title": "When AI automates knowledge work: Aggregate demand and occupational adjustment",
-      "venue": "Working paper · code and data on GitHub",
+      "venue": "Working paper, SSRN · code and data on GitHub",
       "citations": 0,
-      "url": "https://github.com/BSoybilgen/ai-demand-occupational-adjustment",
+      "url": "https://doi.org/10.2139/ssrn.7727199",
       "themes": [
         "ai",
         "labour"
@@ -311,9 +311,9 @@
       "group": "working",
       "year": 2017,
       "title": "Anatomy of the Eurozone crisis: A survival approach",
-      "venue": "Working paper",
+      "venue": "Working paper, SSRN",
       "citations": 0,
-      "url": null,
+      "url": "https://doi.org/10.2139/ssrn.3079699",
       "themes": [
         "finance"
       ]
@@ -338,7 +338,7 @@
       "title": "Credit crunch or not? Case of Turkey during the global economic crisis",
       "venue": "Betam working paper",
       "citations": 0,
-      "url": null,
+      "url": "https://econpapers.repec.org/RePEc:bae:wpaper:006",
       "themes": [
         "finance"
       ]
@@ -350,7 +350,7 @@
       "title": "The role of economic size and distance in Turkey’s exports",
       "venue": "Betam working paper",
       "citations": 0,
-      "url": null,
+      "url": "https://ideas.repec.org/p/bae/rbrief/135.html",
       "themes": [
         "finance"
       ]
@@ -386,7 +386,7 @@
       "title": "Türkiye orta gelir tuzağının eşiğinde (Turkey is on the brink of the middle income trap)",
       "venue": "Betam research brief",
       "citations": 41,
-      "url": null,
+      "url": "https://acikerisim.bahcesehir.edu.tr/items/e409c7fa-da7c-4017-9e17-f093f2efabac",
       "themes": [
         "cycles"
       ],
