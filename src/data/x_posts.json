@@ -1,6 +1,20 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "posts": [
+    {
+      "id": "2125815067916505470",
+      "createdAt": "2026-11-26T04:53:02Z",
+      "text": "Çok doğru, acele etmemek lazım. Ben de merak edip geçmişe baktım.\n\nGümüş 2026'da, yıllık zirvesinin %20'den fazla altındayken 5 kez tek günde %5+ yükseldi (bugün de %5 civarında yukarıda). İlk 4'ünde fiyat sonraki 3 ay içinde %18-28 daha düştü. 4 Kasım'daki yükselişten bu yana da -%19'dayız.\n\nUzun vadede de tablo benzer: 2000'den beri bu tür 30 sert yükselişten 3 ay sonra gümüş vakaların sadece yarısında yukarıdaydı. Altında da 1971'den beri 42 benzer vakada sonuç aynı, yani bu tür sıçramalar tek başına bir dönüş sinyali olmamış.",
+      "url": "https://x.com/Soybilgen/status/2125815067916505470",
+      "images": [
+        {
+          "src": "/x/2125815067916505470.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": true,
+      "lang": "tr"
+    },
     {
       "id": "2125560195153629208",
       "createdAt": "2026-11-25T12:00:16Z",
@@ -203,6 +217,122 @@
       "images": [],
       "isReply": false,
       "lang": "tr"
+    },
+    {
+      "id": "1248176080885858304",
+      "createdAt": "2020-04-09T09:09:02Z",
+      "text": "Çok geçmiş olsun.",
+      "url": "https://x.com/Soybilgen/status/1248176080885858304",
+      "images": [],
+      "isReply": false,
+      "lang": "tr"
+    },
+    {
+      "id": "1245279692002918406",
+      "createdAt": "2020-04-01T09:19:49Z",
+      "text": "Endekslerin, Merkez bankası TÜFE-Gelişmekte Olan Ülkeler Bazlı Reel Efektif Döviz Kuru endeksi ile ilişkisi şu şekilde:",
+      "url": "https://x.com/Soybilgen/status/1245279692002918406",
+      "images": [
+        {
+          "src": "/x/1245279692002918406.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": true,
+      "lang": "tr"
+    },
+    {
+      "id": "1245275991213293568",
+      "createdAt": "2020-04-01T09:05:07Z",
+      "text": "Aylık zincirlenmiş olarak hesaplanıyor endeksler. Daha Beta versiyonundayım, faiz düzeltmeli versiyonunu biraz daha geliştireceğim. TÜFE-Gelişmekte Olan Ülkeler Bazlı Reel Efektif Döviz Kuru ile endekslerin ilişkisi şu şekilde:",
+      "url": "https://x.com/Soybilgen/status/1245275991213293568",
+      "images": [
+        {
+          "src": "/x/1245275991213293568.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": true,
+      "lang": "tr"
+    },
+    {
+      "id": "1245242157268635649",
+      "createdAt": "2020-04-01T06:50:40Z",
+      "text": "Endekslerin iki versiyonunu hesaplıyorum, iki para birimi arasındaki faiz farkını dahil eden versiyonu ve sadece nominal kurlardan hesaplanan versiyonu.",
+      "url": "https://x.com/Soybilgen/status/1245242157268635649",
+      "images": [
+        {
+          "src": "/x/1245242157268635649.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": true,
+      "lang": "tr"
+    },
+    {
+      "id": "1245241750681276417",
+      "createdAt": "2020-04-01T06:49:03Z",
+      "text": "Koronovirüs zamanı zihni sinir projelerimden Turkish Lira Emerging Markets Currency Indices. Günlük güncellenecek bu endekslerde Türk Lirasının 14 gelişmekte ülke para birimine göre değeri ölçülüyor. https://rpubs.com/soybilgen/TRYCI",
+      "url": "https://x.com/Soybilgen/status/1245241750681276417",
+      "images": [
+        {
+          "src": "/x/1245241750681276417.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": false,
+      "lang": "tr"
+    },
+    {
+      "id": "1221411296219926528",
+      "createdAt": "2020-01-26T12:35:20Z",
+      "text": "15dk'mı aldı ama yapmış oldum:",
+      "url": "https://x.com/Soybilgen/status/1221411296219926528",
+      "images": [
+        {
+          "src": "/x/1221411296219926528.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": true,
+      "lang": "tr"
+    },
+    {
+      "id": "1221405302723108867",
+      "createdAt": "2020-01-26T12:11:31Z",
+      "text": "TÜİK niye bölgere göre enflasyonu yıllar bazında tek bir tablo halinde vermiyor da biz her bir haber bülteninden tek tek çekmek zorunda kalıyoruz? Böyle bir tablo varsa bana linkini atabilir misiniz?",
+      "url": "https://x.com/Soybilgen/status/1221405302723108867",
+      "images": [],
+      "isReply": false,
+      "lang": "tr"
+    },
+    {
+      "id": "1217156985512169472",
+      "createdAt": "2020-01-14T18:50:13Z",
+      "text": "Var Hocam, Bilgi Üniversitesi İşletme Fakültesinde Machine Learning for Managerial Decision Making dersini veriyorum.",
+      "url": "https://x.com/Soybilgen/status/1217156985512169472",
+      "images": [
+        {
+          "src": "/x/1217156985512169472.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": true,
+      "lang": "tr"
+    },
+    {
+      "id": "1191392690161762305",
+      "createdAt": "2019-11-04T16:32:06Z",
+      "text": "You may be right about 1% growth in 2019. Our model annual GDP growth forecast for 2019 is currently 0.9%. It's a very interesting case.",
+      "url": "https://x.com/Soybilgen/status/1191392690161762305",
+      "images": [
+        {
+          "src": "/x/1191392690161762305.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": true,
+      "lang": "en"
     }
   ]
 }
