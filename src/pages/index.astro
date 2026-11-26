@@ -15,7 +15,7 @@ const publications = pubData.publications;
 const featured = publications
   .filter((p) => p.featured)
   .sort((a, b) => (a.featured ?? 0) - (b.featured ?? 0));
-const shortVenue = (v: string) => v.replace(/ \d.*$/, '');
+const shortVenue = (v: string) => v.split(' · ')[0].replace(/ \d.*$/, '');
 
 const hidden = new Set<string>(pinData.hidden);
 const pinned = new Set<string>(pinData.pinned);
@@ -119,7 +119,7 @@ const metricItems = [
                 <div class="venue">{shortVenue(p.venue)}</div>
                 <h3>{p.url ? <a href={p.url}>{p.title}</a> : p.title}</h3>
                 <p>{p.summary}</p>
-                <div class="foot"><span>{p.year}</span><span>{p.citations} citations</span></div>
+                <div class="foot"><span>{p.year}</span>{p.citations > 0 ? <span>{p.citations} citations</span> : p.code && <a href={p.code}>Code and data</a>}</div>
               </article>
             ))}
           </div>

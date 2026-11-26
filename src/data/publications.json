@@ -38,7 +38,7 @@
       "themes": [
         "nowcasting"
       ],
-      "featured": 3,
+      "featured": 4,
       "summary": "Uses financial transaction data from the banking system to nowcast Turkish GDP."
     },
     {
@@ -53,7 +53,6 @@
         "nowcasting",
         "inflation"
       ],
-      "featured": 4,
       "summary": "Nowcasts Turkish food inflation from prices scraped daily from online retailers. The CEFIS Food Indices are built on this method."
     },
     {
@@ -79,7 +78,7 @@
       "themes": [
         "nowcasting"
       ],
-      "featured": 2,
+      "featured": 3,
       "summary": "Combines dynamic factors with tree-based ensemble models to nowcast US GDP growth."
     },
     {
@@ -227,7 +226,7 @@
       "themes": [
         "nowcasting"
       ],
-      "featured": 1,
+      "featured": 2,
       "summary": "A dynamic factor model that nowcasts Turkish GDP growth and traces each revision of the nowcast to the data release that caused it. An earlier version appeared as a Federal Reserve Board working paper."
     },
     {
@@ -291,7 +290,10 @@
       "themes": [
         "ai",
         "labour"
-      ]
+      ],
+      "featured": 1,
+      "summary": "A model of the US labour market in which AI takes over a rising share of knowledge tasks. Whether displaced knowledge workers find work depends far more on how much of the income from AI is spent than on whether they can move into manual jobs.",
+      "code": "https://github.com/BSoybilgen/ai-demand-occupational-adjustment"
     },
     {
       "id": "nowcasting-inflation-using-online-prices",
