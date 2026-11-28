@@ -1,6 +1,76 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-28",
   "posts": [
+    {
+      "id": "2126403217093214570",
+      "createdAt": "2026-11-27T19:50:08Z",
+      "text": "Dediğiniz gibi, Bitcoin düşüşe eşlik etti, toparlanmada geride kaldı. Bu yıl Nasdaq'ın yükseldiği günlerde Bitcoin ortalama %0,8 arttı, düştüğü günlerde %1,2 geriledi. 2023-24'te ise Nasdaq yükselirken Bitcoin ortalama %0,7 artıyor, Nasdaq düşerken %0,2 geriliyordu. Nereden, nereye :(",
+      "url": "https://x.com/Soybilgen/status/2126403217093214570",
+      "images": [
+        {
+          "src": "/x/2126403217093214570.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": true,
+      "lang": "tr"
+    },
+    {
+      "id": "2126396108897128481",
+      "createdAt": "2026-11-27T19:21:53Z",
+      "text": "Paylaştığınız UBS notuna şunu da ekleyeyim: Gümüş 9 ayı biraz aşkın bir sürede zirveden %60 düştü. 1980-81’den beri bu kadar hızlı bir %60 düşüş olmamıştı.\n\n1968’den bu yana gümüş daha önce 5 kez zirveden %60 düştü. Hepsinde fiyat bundan sonra bir süre daha geriledi: %16 ile %47 daha.",
+      "url": "https://x.com/Soybilgen/status/2126396108897128481",
+      "images": [
+        {
+          "src": "/x/2126396108897128481.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": true,
+      "lang": "tr"
+    },
+    {
+      "id": "2126338445106683985",
+      "createdAt": "2026-11-27T15:32:45Z",
+      "text": "Düşüşün daha sınırlı kalıp zamana yayıldığı tespitinize katılıyorum: günlük kapanışlara göre zirveden en büyük düşüş önceki üç döngüde %85, %83 ve %77’ydi, bu döngüde şimdilik %53. Elimizdeki örnek sayısı az; fiyatın zirveye göre yarıya inmesi o üç döngüde sırasıyla 0,5 ay, 1,5 ay ve 6 ay sürmüştü, bu kez 8 ay sürdü.",
+      "url": "https://x.com/Soybilgen/status/2126338445106683985",
+      "images": [
+        {
+          "src": "/x/2126338445106683985.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": true,
+      "lang": "tr"
+    },
+    {
+      "id": "2126238406665445380",
+      "createdAt": "2026-11-27T08:55:14Z",
+      "text": "Elinize sağlık, bugün BIST 100 yükselirken bankalar geriledi. 2017'den bu yana TCMB'nin bir haftalık repo fonlamasına ara verdiği önceki 7 döneme baktım. Arayı izleyen 20 işlem gününde banka endeksi Mart 2025'te BIST 100'ün 16,8 puan, Mart 2026'da 16,4 puan gerisinde kaldı. 2017-2020 arasındaki 5 dönemde fark -8,1 ile +5,8 puan arasındaydı.",
+      "url": "https://x.com/Soybilgen/status/2126238406665445380",
+      "images": [
+        {
+          "src": "/x/2126238406665445380.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": true,
+      "lang": "tr"
+    },
+    {
+      "id": "2126235607022104854",
+      "createdAt": "2026-11-27T08:44:06Z",
+      "text": "Elinize sağlık, BTC’nin kazancını 6 saatte geri vermesi dikkat çekici. Geçmişten bir not ekleyeyim: BTC’nin bir saatte en az %4 yükseldiği 79 örneğin 5’inde kazancın tamamı 6 saat içinde silinmiş. 23 Kasım altıncı örnek oldu. Son bir yılın zirvesinin en az %20 altında görülen 67 yükselişin 4’ünde benzer bir dönüş olmuş. Nasdaq 100 vadelileri 6 saat sonra haber öncesi seviyenin %3'ün üzerindeydi.",
+      "url": "https://x.com/Soybilgen/status/2126235607022104854",
+      "images": [
+        {
+          "src": "/x/2126235607022104854.jpg",
+          "alt": "Chart attached to the post"
+        }
+      ],
+      "isReply": true,
+      "lang": "tr"
+    },
     {
       "id": "2125815067916505470",
       "createdAt": "2026-11-26T04:53:02Z",
@@ -305,34 +375,6 @@
       "images": [],
       "isReply": false,
       "lang": "tr"
-    },
-    {
-      "id": "1217156985512169472",
-      "createdAt": "2020-01-14T18:50:13Z",
-      "text": "Var Hocam, Bilgi Üniversitesi İşletme Fakültesinde Machine Learning for Managerial Decision Making dersini veriyorum.",
-      "url": "https://x.com/Soybilgen/status/1217156985512169472",
-      "images": [
-        {
-          "src": "/x/1217156985512169472.jpg",
-          "alt": "Chart attached to the post"
-        }
-      ],
-      "isReply": true,
-      "lang": "tr"
-    },
-    {
-      "id": "1191392690161762305",
-      "createdAt": "2019-11-04T16:32:06Z",
-      "text": "You may be right about 1% growth in 2019. Our model annual GDP growth forecast for 2019 is currently 0.9%. It's a very interesting case.",
-      "url": "https://x.com/Soybilgen/status/1191392690161762305",
-      "images": [
-        {
-          "src": "/x/1191392690161762305.jpg",
-          "alt": "Chart attached to the post"
-        }
-      ],
-      "isReply": true,
-      "lang": "en"
     }
   ]
 }
